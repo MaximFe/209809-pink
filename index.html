@@ -1,12 +1,156 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+	<head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+		<header class="main-header">
+			<a class="main-header__logo" href="#">
+				<img class="main-header__logo-image" src="#" alt="Логотип">
+			</a>
+			<nav class="main-nav">
+				<button class="main-nav__button" type="button">Меню</button>
+			</nav>		
+			<ul class="main-nav__list">
+				 <li class="main-nav__item">
+					 <a>Главная</a>
+				 </li>
+				 <li class="main-nav__item">
+					 <a href="photo.html">Фотографии</a>
+				 </li>
+				 <li class="main-nav__item">
+					 <a href="form.html">Конкурс</a>
+				 </li>
+				 <li class="main-nav__item">
+					 <a href="#">HTML Academy</a>
+				 </li>
+      </ul>
+		</header>
+		
+		<main class="main-page">
+      <h1 class="visually-hidden">Мобильное приложение "Пинк"</h1>
+      <section class="download">
+        <a class="download__main-link" href="#">Скачать приложение</a>
+        <ul class="download__list">
+          <li class="download__item">
+            <a class="download__link download__link--apple" href="https://www.apple.com">скачать для iOS</a>
+          </li>
+          <li class="download__item">
+            <a class="download__link download__link--android" href="#play-market">скачать для Android</a>
+          </li>
+          <li class="download__item">
+            <a class="download__link download__link--windows" href="#win-store">скачать для Windows</a>
+          </li>
+        </ul>
+        <p class="download__text">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+      </section>  
+      <section class="offer">
+        <p class="offer__title">Устали от серости мегаполиса?</p>
+        <p class="offer__title">Нам есть, что вам<br> предложить!</p>
+      </section>   
+      <section class="features">
+				<ul class="features__list">
+					<li class="features__item">
+						<h3 class="features__title">Поднимает настроение</h3>
+						<p class="features__description">Приложение позволит Вам победить осеннюю хандру и депрессию буквально в несколько кликов</p>
+					</li>
+					<li class="features__item">
+						<h3 class="features__title">Меняет мир вокруг</h3>
+						<p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью,чтобы усилить эффект</p>
+					</li>
+					<li class="features__item features__item--photo">
+						<h3 class="features__title">Заводит новых друзей</h3>
+						<p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+					</li>
+				</ul>
+      </section>  
+      <section class="reviews">
+				<blockquote class="reviews__item">
+					<cite class="reviews__author">Николай Петров</cite>
+					<p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+				</blockquote>
+				<div class="reviews__toggles slider__toggles">
+					<button class="slider__toggle" type="button">1</button>
+					<button class="slider__toggle" type="button">2</button>
+					<button class="slider__toggle" type="button">3</button>
+				</div>
+      </section>
+      
+      <section class="price">
+				<table class="price__table">
+					<tr>
+						<td class="price__header">
+							<h3 class="price__title">Стандарт</h3>
+							<span class="price__cost">3,99 USD</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="price__cell">Розовый фильтр
+							<span class="price__icon  price__icon--true">Да</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="price__cell">Смайлики
+							<span class="price__icon  price__icon--true">Да</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="price__cell">Комментарии
+							<span class="price__icon  price__icon--false">Нет</span>
+						</td>
+					</tr>
+				</table>
+				<div class="price__toggles slider__toggles">
+					<button class="slider__toggle" type="button">1</button>
+					<button class="slider__toggle" type="button">2</button>
+					<button class="slider__toggle" type="button">3</button>
+				</div>
+      </section>      
+      <section class="contacts">
+        <p class="contacts__header">Остались вопросы?<br> Свяжитесь с нами!</p>
+        <div class="contacts__call-us">
+          <h3 class="contacts__header">Звоните:</h3>
+          <p class="contacts__text">+7&nbsp;(812)&nbsp;555-66-66</p>
+        </div>
+        <div class="contacts__write-us">
+          <h3 class="contacts__header">Пишите:</h3>
+          <p class="contacts__text">
+            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+          </p>
+        </div>
+        <div class="contacts__guests">
+          <h3 class="contacts__header">Приезжайте в&nbsp;гости:</h3>
+          <p class="contacts__text">
+						ул.&nbsp;Большая
+						<br>Конюшенная, 19/8</p>
+        </div>
+			</section>     
+      <section class="map">
+      </section>
+		</main>
+		
+		<footer class="footer">
+			<a class="footer__logo">
+				<img class="footer__logo-image" src="#" alt="Логотип">
+			</a>
+			<div class="footer__social social">
+				<ul class="social__list">
+					<li class="social__item">
+						<a class="social__link social__link--twitter" href="https://vk.com/htmlacademy">Мы в Твиттере</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy">Мы на Youtube</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__copyright copyright">
+				<b class="copyright__text">Разработано:</b>
+				<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+			</div>
+		</footer>
   </body>
 </html>
