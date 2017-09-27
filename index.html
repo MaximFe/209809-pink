@@ -5,30 +5,30 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-		<header class="main-header">
-			<a class="main-header__logo" href="#">
+		<header class="page-header">
+			<a class="main-header__logo">
 				<img class="main-header__logo-image" src="#" alt="Логотип">
 			</a>
 			<nav class="main-nav">
-				<button class="main-nav__button" type="button">Меню</button>
-			</nav>		
-			<ul class="main-nav__list">
-				 <li class="main-nav__item">
-					 <a>Главная</a>
-				 </li>
-				 <li class="main-nav__item">
-					 <a href="photo.html">Фотографии</a>
-				 </li>
-				 <li class="main-nav__item">
-					 <a href="form.html">Конкурс</a>
-				 </li>
-				 <li class="main-nav__item">
-					 <a href="#">HTML Academy</a>
-				 </li>
-      </ul>
+				<button class="main-nav__button" type="button">Меню</button>		
+				<ul class="main-nav__list">
+					<li class="main-nav__item">
+						<a class="main-nav__link">Главная</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="photo.html">Фотографии</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="form.html">Конкурс</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		
-		<main class="main-page">
+		<main class="page-main">
       <h1 class="visually-hidden">Мобильное приложение "Пинк"</h1>
       <section class="download">
         <a class="download__main-link" href="#">Скачать приложение</a>
@@ -50,6 +50,7 @@
         <p class="offer__title">Нам есть, что вам<br> предложить!</p>
       </section>   
       <section class="features">
+      	<svg class="features__triangle-top"></svg>
 				<ul class="features__list">
 					<li class="features__item">
 						<h3 class="features__title">Поднимает настроение</h3>
@@ -66,71 +67,81 @@
 				</ul>
       </section>  
       <section class="reviews">
-				<blockquote class="reviews__item">
-					<cite class="reviews__author">Николай Петров</cite>
-					<p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
-				</blockquote>
+      	<ul class="reviews__list">
+      		<li class="reviews__item">
+      			<blockquote class="reviews__cite">
+							<cite class="reviews__author">Николай Петров</cite>
+							<p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+						</blockquote>
+      		</li>
+      	</ul>
 				<div class="reviews__toggles slider__toggles">
-					<button class="slider__toggle" type="button">1</button>
-					<button class="slider__toggle" type="button">2</button>
-					<button class="slider__toggle" type="button">3</button>
+					<button class="slider__toggle-item" type="button">1</button>
+					<button class="slider__toggle-item" type="button">2</button>
+					<button class="slider__toggle-item" type="button">3</button>
 				</div>
       </section>
       
       <section class="price">
+      	<svg class="price__triangle-top"></svg>
 				<table class="price__table">
-					<tr>
-						<td class="price__header">
-							<h3 class="price__title">Стандарт</h3>
-							<span class="price__cost">3,99 USD</span>
-						</td>
-					</tr>
-					<tr>
-						<td class="price__cell">Розовый фильтр
-							<span class="price__icon  price__icon--true">Да</span>
-						</td>
-					</tr>
-					<tr>
-						<td class="price__cell">Смайлики
-							<span class="price__icon  price__icon--true">Да</span>
-						</td>
-					</tr>
-					<tr>
-						<td class="price__cell">Комментарии
-							<span class="price__icon  price__icon--false">Нет</span>
-						</td>
-					</tr>
+					<thead class="price__header">
+						<tr>
+							<td>
+								<h3 class="price__title">Стандарт</h3>
+								<span class="price__cost">3,99 USD</span>
+							</td>
+						</tr>
+					</thead>
+					<tbody class="price__body">
+						<tr>
+							<td class="price__cell">Розовый фильтр
+								<span class="price__icon  price__icon--true">Да</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="price__cell">Смайлики
+								<span class="price__icon  price__icon--true">Да</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="price__cell">Комментарии
+								<span class="price__icon  price__icon--false">Нет</span>
+							</td>
+						</tr>
+					</tbody>
 				</table>
 				<div class="price__toggles slider__toggles">
-					<button class="slider__toggle" type="button">1</button>
-					<button class="slider__toggle" type="button">2</button>
-					<button class="slider__toggle" type="button">3</button>
+					<button class="slider__toggle-item" type="button">1</button>
+					<button class="slider__toggle-item" type="button">2</button>
+					<button class="slider__toggle-item" type="button">3</button>
 				</div>
       </section>      
       <section class="contacts">
-        <p class="contacts__header">Остались вопросы?<br> Свяжитесь с нами!</p>
-        <div class="contacts__call-us">
-          <h3 class="contacts__header">Звоните:</h3>
-          <p class="contacts__text">+7&nbsp;(812)&nbsp;555-66-66</p>
-        </div>
-        <div class="contacts__write-us">
-          <h3 class="contacts__header">Пишите:</h3>
-          <p class="contacts__text">
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-        </div>
-        <div class="contacts__guests">
-          <h3 class="contacts__header">Приезжайте в&nbsp;гости:</h3>
-          <p class="contacts__text">
-						ул.&nbsp;Большая
-						<br>Конюшенная, 19/8</p>
-        </div>
+        <p class="contacts__call-us">Остались вопросы? Свяжитесь с нами!</p>
+        <div class="contacts__items">
+					<div class="contacts__item">
+						<h3 class="contacts__header">Звоните:</h3>
+						<a class="contacts__text" href="tel:+78125556666">+7&nbsp;(812)&nbsp;555-66-66</a>
+					</div>
+					<div class="contacts__item">
+						<h3 class="contacts__header">Пишите:</h3>
+						<a class="contacts__text" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+					</div>
+					<div class="contacts__item">
+						<h3 class="contacts__header">Приезжайте в&nbsp;гости:</h3>
+						<p class="contacts__text">
+							ул.&nbsp;Большая
+							Конюшенная, 19/8
+						</p>
+					</div>
+				</div>
 			</section>     
       <section class="map">
       </section>
 		</main>
 		
-		<footer class="footer">
+		<footer class="page-footer">
 			<a class="footer__logo">
 				<img class="footer__logo-image" src="#" alt="Логотип">
 			</a>

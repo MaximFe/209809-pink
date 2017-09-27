@@ -5,188 +5,181 @@
     <title>HTML Academy: Пинк</title>
   </head>
   <body>
-		<header class="main-header">
-			<a class="main-header__logo" href="#">
+		<header class="page-header">
+			<a class="main-header__logo" href="index.html">
 				<img class="main-header__logo-image" src="#" alt="Логотип">
 			</a>
 			<nav class="main-nav">
-				<button class="main-nav__button" type="button">Меню</button>
-			</nav>		
-			<ul class="main-nav__list">
-				 <li class="main-nav__item">
-					 <a>Главная</a>
-				 </li>
-				 <li class="main-nav__item">
-					 <a href="photo.html">Фотографии</a>
-				 </li>
-				 <li class="main-nav__item">
-					 <a href="form.html">Конкурс</a>
-				 </li>
-				 <li class="main-nav__item">
-					 <a href="#">HTML Academy</a>
-				 </li>
-      </ul>
+				<button class="main-nav__button" type="button">Меню</button>		
+				<ul class="main-nav__list">
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="index.html">Главная</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link">Фотографии</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="form.html">Конкурс</a>
+					</li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+					</li>
+				</ul>
+			</nav>
 		</header>
 		
-		<main class="main-page">
+		<main class="page-main">
       <section class="intro">
         <h1 class="intro__title">Фотографии пользователей</h1>
       </section>
       <section class="gallery">
         <p class="gallery__description">Взгляните на фотографии,которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <article class="gallery-item">
-        	<div class="gallery-item__wrapper">
-						<a href="#" class="gallery-item__link">
-							<img class="gallery-item__author-image" src="#" alt="Фото Анны">
-						</a>
-						<div class="gallery-item__desc">
-							<blockquote class="gallery-item__comment">
-								<cite class="gallery-item__user-name">Анна
-									<span class="gallery-item__time"> (5 минут назад)</span>
-								</cite>
-								<p class="gallery-item__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-							</blockquote>
-							<p class="gallery-item__rating">
-								<span class="gallery-item__likes">Нравится: 215</span>
-							</p>
-						</div>
+					<img class="gallery-item__author-image" src="#" alt="Фото Анны">
+					<div class="gallery__cite-wrapper">
+						<blockquote class="gallery-item__comment">
+							<cite class="gallery-item__user-name">Анна
+							<span class="gallery-item__time"> (5 минут назад)</span>
+							</cite>
+							<p class="gallery-item__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+						</blockquote>
+					</div>
+					<div class="gallery__likes-wrapper">
+						<button class="gallery__likes-btn" type="button" name="likes"></button>
+						<span class="gallery__likes-text">Нравится:</span>
+						<span class="gallery__likes-count">666</span>
 					</div>
         </article>
         <article class="gallery-item">
-          <div class="gallery-item__wrapper">
-            <a href="#" class="gallery-item__link">
-              <img class="gallery-item__author-image" src="#" alt="Фото Левон">
-            </a>
-            <div class="gallery-item__desc">
-              <blockquote class="gallery-item__comment">
-                <cite class="gallery-item__user-name">Левон
-                  <span class="gallery-item__time"> (5 часов назад)</span>
-                </cite>
-                <p class="gallery-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              </blockquote>
-              <p class="gallery-item__rating">
-                <span class="gallery-item__likes">Нравится: 356</span>
-              </p>
-            </div>
-          </div>
+					<img class="gallery-item__author-image" src="#" alt="Фото Левон">
+					<div class="gallery__cite-wrapper">
+						<blockquote class="gallery-item__comment">
+							<cite class="gallery-item__user-name">Левон
+							<span class="gallery-item__time"> (5 часов назад)</span>
+							</cite>
+							<p class="gallery-item__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+						</blockquote>
+					</div>
+					<div class="gallery__likes-wrapper">
+						<button class="gallery__likes-btn" type="button" name="likes"></button>
+						<span class="gallery__likes-text">Нравится:</span>
+						<span class="gallery__likes-count">356</span>
+					</div>
+        </article>       
+        <article class="gallery-item">
+					<img class="gallery-item__author-image" src="#" alt="Фото Антона">
+					<div class="gallery__cite-wrapper">
+						<blockquote class="gallery-item__comment">
+							<cite class="gallery-item__user-name">Антон
+							<span class="gallery-item__time"> (12 часов назад)</span>
+							</cite>
+							<p class="gallery-item__text">Соседи будут рады!</p>
+						</blockquote>
+					</div>
+					<div class="gallery__likes-wrapper">
+						<button class="gallery__likes-btn" type="button" name="likes"></button>
+						<span class="gallery__likes-text">Нравится:</span>
+						<span class="gallery__likes-count">666</span>
+					</div>
+        </article>       
+        <article class="gallery-item">
+					<img class="gallery-item__author-image" src="#" alt="Фото Бориса">
+					<div class="gallery__cite-wrapper">
+						<blockquote class="gallery-item__comment">
+							<cite class="gallery-item__user-name">Борис
+							<span class="gallery-item__time"> (20 часов назад)</span>
+							</cite>
+							<p class="gallery-item__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+						</blockquote>
+					</div>
+					<div class="gallery__likes-wrapper">
+						<button class="gallery__likes-btn" type="button" name="likes"></button>
+						<span class="gallery__likes-text">Нравится:</span>
+						<span class="gallery__likes-count">215</span>
+					</div>
+        </article>        
+        <article class="gallery-item">
+					<img class="gallery-item__author-image" src="#" alt="Фото Сергея">
+					<div class="gallery__cite-wrapper">
+						<blockquote class="gallery-item__comment">
+							<cite class="gallery-item__user-name">Сергей
+							<span class="gallery-item__time"> (25 часов назад)</span>
+							</cite>
+							<p class="gallery-item__text">Самая кубанская в мире!</p>
+						</blockquote>
+					</div>
+					<div class="gallery__likes-wrapper">
+						<button class="gallery__likes-btn" type="button" name="likes"></button>
+						<span class="gallery__likes-text">Нравится:</span>
+						<span class="gallery__likes-count">4</span>
+					</div>
+        </article>      
+        <article class="gallery-item">
+					<img class="gallery-item__author-image" src="#" alt="Фото Максима">
+					<div class="gallery__cite-wrapper">
+						<blockquote class="gallery-item__comment">
+							<cite class="gallery-item__user-name">Максим
+							<span class="gallery-item__time"> (40 часов назад)</span>
+							</cite>
+							<p class="gallery-item__text">Где снег то?</p>
+						</blockquote>
+					</div>
+					<div class="gallery__likes-wrapper">
+						<button class="gallery__likes-btn" type="button" name="likes"></button>
+						<span class="gallery__likes-text">Нравится:</span>
+						<span class="gallery__likes-count">150</span>
+					</div>
         </article>
         <article class="gallery-item">
-          <div class="gallery-item__wrapper">
-            <a href="#" class="gallery-item__link">
-              <img class="gallery-item__author-image" src="#" alt="Фото Антона">
-            </a>
-            <div class="gallery-item__desc">
-              <blockquote class="gallery-item__comment">
-                <cite class="gallery-item__user-name">Антон
-                  <span class="gallery-item__time"> (12 часов назад)</span>
-                </cite>
-                <p class="gallery-item__text">Соседи будут рады!</p>
-              </blockquote>
-              <p class="gallery-item__rating">
-                <span class="gallery-item__likes">Нравится: 666</span>
-              </p>
-            </div>
-          </div>
-        </article>
-        <article class="gallery-item">
-          <div class="gallery-item__wrapper">
-            <a href="#" class="gallery-item__link">
-              <img class="gallery-item__author-image" src="#" alt="Фото Бориса">
-            </a>
-            <div class="gallery-item__desc">
-              <blockquote class="gallery-item__comment">
-                <cite class="gallery-item__user-name">Борис
-                  <span class="gallery-item__time"> (20 часов назад)</span>
-                </cite>
-                <p class="gallery-item__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              </blockquote>
-              <p class="gallery-item__rating">
-                <span class="gallery-item__likes">Нравится: 215</span>
-              </p>
-            </div>
-          </div>
-        </article>
-        <article class="gallery-item">
-          <div class="gallery-item__wrapper">
-            <a href="#" class="gallery-item__link">
-              <img class="gallery-item__author-image" src="#" alt="Фото Сергея">
-            </a>
-            <div class="gallery-item__desc">
-              <blockquote class="gallery-item__comment">
-                <cite class="gallery-item__user-name">Сергей
-                  <span class="gallery-item__time"> (25 часов назад)</span>
-                </cite>
-                <p class="gallery-item__text">Самая кубанская в мире!</p>
-              </blockquote>
-              <p class="gallery-item__rating">
-                <span class="gallery-item__likes">Нравится: 4</span>
-              </p>
-            </div>
-          </div>
-        </article>
-        <article class="gallery-item">
-          <div class="gallery-item__wrapper">
-            <a href="#" class="gallery-item__link">
-              <img class="gallery-item__author-image" src="#" alt="Фото Максима">
-            </a>
-            <div class="gallery-item__desc">
-              <blockquote class="gallery-item__comment">
-                <cite class="gallery-item__user-name">Максим
-                  <span class="gallery-item__time"> (40 часов назад)</span>
-                </cite>
-                <p class="gallery-item__text">Где снег то?</p>
-              </blockquote>
-              <p class="gallery-item__rating">
-                <span class="gallery-item__likes">Нравится: 150</span>
-              </p>
-            </div>
-          </div>
-        </article>
-        <article class="gallery-item">
-          <div class="gallery-item__wrapper">
-            <a href="#" class="gallery-item__link">
-              <img class="gallery-item__author-image" src="#" alt="Фото Надежды">
-            </a>
-            <div class="gallery-item__desc">
-              <blockquote class="gallery-item__comment">
-                <cite class="gallery-item__user-name">Надежда
-                  <span class="gallery-item__time"> (45 часов назад назад)</span>
-                </cite>
-                <p class="gallery-item__text">Всем GM и взаимные лайки</p>
-              </blockquote>
-              <p class="gallery-item__rating">
-                <span class="gallery-item__likes">Нравится: 2560</span>
-              </p>
-            </div>
-          </div>
+					<img class="gallery-item__author-image" src="#" alt="Фото Надежды">
+					<div class="gallery__cite-wrapper">
+						<blockquote class="gallery-item__comment">
+							<cite class="gallery-item__user-name">Надежда
+							<span class="gallery-item__time"> (45 часов назад назад)</span>
+							</cite>
+							<p class="gallery-item__text">Всем GM и взаимные лайки</p>
+						</blockquote>
+					</div>
+					<div class="gallery__likes-wrapper">
+						<button class="gallery__likes-btn" type="button" name="likes"></button>
+						<span class="gallery__likes-text">Нравится:</span>
+						<span class="gallery__likes-count">2560</span>
+					</div>
         </article>
       </section>  
-      <section class="upload-photo">
-        <p class="upload-photo__text">Затмите из всех! Выкладывайте все, что накопилось в телефоне!
-        <div class="upload-photo__wrapper">
-          <a href="#" class="upload-photo__picture">
-            <img class="upload-photo__image" src="#" alt="Ваше фото">
-          </a>
-          <div class="upload-photo__settings">
-            <p class="upload-photo__option option-button">
-              <button class="option-button option-button--crop">Обрезать фото</button>
-              <button class="option-button option-button--fill">Насыщенность</button>
-              <button class="option-button option-button--contrast">Контрастность</button>
-            </p>
-            <div class="upload-photo__range-control">
-              <div class="upload-photo__scale">
-                <div class="upload-photo__bar"></div>
-              </div>
-              <div class="upload-photo__range-toggle"></div>
-            </div>
-            <button class="upload-photo__button-post upload-photo__button-post--active">Запостить</button>
-            <button class="upload-photo__button-cancel upload-photo__button-cancel--disabled">Отмена</button>
+      <section class="edit-photo">
+        <p class="edit-photo__text" >Затмите из всех! Выкладывайте все, что накопилось в телефоне!
+        <form class="edit-photo__form" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="edit-photo__picture">
+            <img class="edit-photo__image" src="#" alt="Ваше фото">
           </div>
-        </div>
+          <div class="edit-photo__options">
+						<div class="edit-photo__option"> 
+						  <label class="edit-photo__item edit-photo__item--crop" for="crop">
+							  <svg></svg>             
+						  </label>
+						  <input class="edit-photo__form-range" type="range" name="crop" id="crop" min="-50" max="50">
+						</div>
+						<div class="edit-photo__option"> 
+						  <label class="edit-photo__item edit-photo__item--fill" for="fill">
+							  <svg></svg>             
+							</label>
+							<input class="edit-photo__form-range" type="range" name="fill" id="fill" min="-50" max="50">
+						</div>
+						<div class="edit-photo__option">
+						  <label class="edit-photo__item edit-photo__item--contrast" for="contrast">
+							  <svg></svg>             
+							</label>
+							<input class="edit-photo__form-range" type="range" name="contrast" id="contrast" min="-50" max="50">
+						</div>
+         	</div>
+					<button class="edit-photo__btn-post edit-photo__btn-post--active">Запостить</button>
+					<button class="edit-photo__btn-cancel edit-photo__btn-cancel--disabled">Отмена</button>
+        </form>
       </section>
 		</main>
 		
-		<footer class="footer">
+		<footer class="page-footer">
 			<a class="footer__logo">
 				<img class="footer__logo-image" src="#" alt="Логотип">
 			</a>
